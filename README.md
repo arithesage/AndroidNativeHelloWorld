@@ -16,7 +16,7 @@ branch instead of master).
 
 Example:
 
-- git clone [-b java] https://arithesage/AndroidHelloWorld.git MyProject --depth=1
+- git clone [-b java] https://arithesage/AndroidNativeHelloWorld.git MyProject --depth=1
   (append the '-b java' part if you want to work with Java instead of Kotlin)
 
 - cd MyProject
