@@ -53,7 +53,7 @@ except ModuleNotFoundError:
     ZIPFILE_AVAILABLE = False
 
 try:
-    import wget
+    import wget # type: ignore
     WGET_AVAILABLE = True
 except ModuleNotFoundError:
     WGET_AVAILABLE = False
