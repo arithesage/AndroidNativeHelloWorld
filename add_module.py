@@ -41,9 +41,9 @@ class Placeholders:
 class Files:
     AndroidManifest = "AndroidManifest.xml"
 
-    MainActivity = "MainActivity.kt"
-    AndroidTest = "ExampleInstrumentedTest.kt"
-    Test = "ExampleUnitTest.kt"
+    MainActivity = "MainActivity.java"
+    AndroidTest = "ExampleInstrumentedTest.java"
+    Test = "ExampleUnitTest.java"
     
     GradleSettings = "settings.gradle.kts"
     GradleBuild = "build.gradle.kts"
@@ -81,7 +81,7 @@ class ModulePaths:
         
 
 class Paths:
-    BaseModule = make_path ("_BaseModule", "Kotlin")
+    BaseModule = make_path ("_BaseModule", "Java")
     BaseModuleSrcMain = make_path (BaseModule, "/src/main/java")
     BaseModuleSrcAndroidTest = make_path (BaseModule, "/src/androidTest/java")
     BaseModuleSrcTest = make_path (BaseModule, "/src/test/java")
@@ -251,7 +251,7 @@ if __name__ == "__main__":
     if not DEBUGGING:
         argv = sys.argv
     else:
-        argv = (None, "TestModule", "me.arithesage.kotlin.android.testapp.modules")
+        argv = (None, "TestModule", "me.arithesage.java.android.testapp.modules")
 
     argc = len (argv[1:])
 

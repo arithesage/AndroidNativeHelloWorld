@@ -42,9 +42,9 @@ class Placeholders:
 # class Files:
 #     AndroidManifest = "AndroidManifest.xml"
 
-#     MainActivity = "MainActivity.kt"
-#     AndroidTest = "ExampleInstrumentedTest.kt"
-#     Test = "ExampleUnitTest.kt"
+#     MainActivity = "MainActivity.java"
+#     AndroidTest = "ExampleInstrumentedTest.java"
+#     Test = "ExampleUnitTest.java"
     
 #     GradleSettings = "settings.gradle.kts"
 #     GradleBuild = "build.gradle.kts"
@@ -62,9 +62,9 @@ class Placeholders:
 
 
 class Files:
-    MainActivity = "NativeLib.kt"
-    AndroidTest = "ExampleInstrumentedTest.kt"
-    Test = "ExampleUnitTest.kt"
+    MainActivity = "NativeLib.java"
+    AndroidTest = "ExampleInstrumentedTest.java"
+    Test = "ExampleUnitTest.java"
 
     NativeLib = "nativelib.cpp"
 
@@ -225,7 +225,7 @@ def init_module (module_name, package_name):
     # We have to start updating the source and config files with the
     # new module data.
 
-    # Update the .kt files with the new module's package
+    # Update the .java files with the new module's package
     echo_va ("Updating $[0], $[1] and $[2] ...", 
              Files.MainActivity, Files.AndroidTest, Files.Test)
 
@@ -303,7 +303,7 @@ if __name__ == "__main__":
     if not DEBUGGING:
         argv = sys.argv
     else:
-        argv = (None, "TestModule", "me.arithesage.kotlin.android.testapp.modules")
+        argv = (None, "TestModule", "me.arithesage.java.android.testapp.modules")
 
     argc = len (argv[1:])
 

@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "BaseNativeApp"
 include(":app")
+
